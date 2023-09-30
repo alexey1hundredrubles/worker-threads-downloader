@@ -1,7 +1,5 @@
 const fs = require('fs/promises')
 const { Worker, isMainThread, parentPort, workerData } = require('worker_threads')
-const { Readable } = require('stream')
-const { finished } = require('stream/promises')
 
 const [, , , threadCount, downloadUrl, fileTitle] = process.argv
 
